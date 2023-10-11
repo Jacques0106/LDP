@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0 20px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+h1 {
+  font-size: 34px;
+}
+.menu {
+  margin-bottom: 16px;
+  display: flex;
+}
+.menu span {
+  padding: 3px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #666666;
+}
+.menu span:hover {
+  background: #191919;
+}
+span.menu-active {
+  background: #191919;
+}
+.digits {
+  margin-bottom: 20px;
+  display: flex;
+}
+.disclaimer {
+  font-size: 11px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  color: #707070;
+}
+.digits span {
+  padding: 25px 0;
+  flex-basis: auto;
+  flex-grow: 1;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 15px;
+  color: #fff;
+}
+.digits_moved_down {
+  background-color: #c03;
+}
+.digits_moved_up {
+  background-color: #29abe2;
+}
+.chartContainer {
+  min-height: 350px;
+  min-width: 50px;
+}
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  margin-left: 45%;
+  width: 90px;
+  height: 90px;
+  animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
